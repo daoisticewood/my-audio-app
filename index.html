@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Audio Panner</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        #controls {
+            margin-bottom: 20px;
+        }
+        #progress-bar {
+            width: 100%;
+            background-color: #e0e0e0;
+            height: 20px;
+            margin-top: 10px;
+        }
+        #progress {
+            width: 0;
+            height: 100%;
+            background-color: #4caf50;
+        }
+    </style>
+</head>
+<body>
+    <div id="controls">
+        <input type="text" id="video-url" placeholder="Enter YouTube Video URL">
+        <button onclick="fetchVideo()">Fetch Video</button>
+    </div>
+    <div id="progress-bar">
+        <div id="progress"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
