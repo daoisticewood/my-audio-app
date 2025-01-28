@@ -1,4 +1,4 @@
-async function fetchVideo() {
+window.fetchVideo = async function() {
     const videoUrlInput = document.getElementById('video-url');
     const progressBar = document.getElementById('progress');
 
