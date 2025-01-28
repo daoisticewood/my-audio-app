@@ -1,8 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const videoUrlInput = document.getElementById('video-url');
-    const progressBar = document.getElementById('progress');
-});
-
 async function fetchVideo() {
     const videoUrlInput = document.getElementById('video-url');
     const progressBar = document.getElementById('progress');
